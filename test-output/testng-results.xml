@@ -1,25 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="0" failed="0" skipped="8">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-21T12:48:44 IST" name="Default suite" finished-at="2023-12-21T12:49:02 IST" duration-ms="17833">
+  <suite started-at="2023-12-21T19:31:19 IST" name="Parallel Test Suite" finished-at="2023-12-21T19:31:24 IST" duration-ms="4343">
     <groups>
     </groups>
-    <test started-at="2023-12-21T12:48:44 IST" name="Default test" finished-at="2023-12-21T12:49:02 IST" duration-ms="17833">
+    <test started-at="2023-12-21T19:31:19 IST" name="ChromeTest" finished-at="2023-12-21T19:31:24 IST" duration-ms="4343">
       <class name="com.opencart.tests.HomePageTest">
-        <test-method is-config="true" signature="setUP()[pri:0, instance:com.opencart.tests.HomePageTest@1bd4fdd]" started-at="2023-12-21T12:48:44 IST" name="setUP" finished-at="2023-12-21T12:48:51 IST" duration-ms="7273" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:com.opencart.tests.HomePageTest@42a48628]" started-at="2023-12-21T19:31:19 IST" name="setUP" finished-at="2023-12-21T19:31:23 IST" duration-ms="4101" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Cannot find command to respond: 3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Cannot find command to respond: 3
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:241)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:101)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPageImpl(BrowserContextImpl.java:419)
+at com.microsoft.playwright.impl.BrowserContextImpl.lambda$newPage$13(BrowserContextImpl.java:412)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:412)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:44)
+at com.opencart.factory.Browsers.startBrowser(Browsers.java:65)
+at com.opencart.base.BaseTest.setUP(BaseTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="homePageTitleTest()[pri:0, instance:com.opencart.tests.HomePageTest@1bd4fdd]" started-at="2023-12-21T12:48:51 IST" name="homePageTitleTest" finished-at="2023-12-21T12:48:51 IST" duration-ms="13" status="PASS">
+        <test-method signature="homePageTitleTest()[pri:0, instance:com.opencart.tests.HomePageTest@42a48628]" started-at="2023-12-21T19:31:23 IST" name="homePageTitleTest" finished-at="2023-12-21T19:31:23 IST" duration-ms="0" status="SKIP">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Cannot find command to respond: 3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Cannot find command to respond: 3
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:241)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:101)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPageImpl(BrowserContextImpl.java:419)
+at com.microsoft.playwright.impl.BrowserContextImpl.lambda$newPage$13(BrowserContextImpl.java:412)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:412)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:44)
+at com.opencart.factory.Browsers.startBrowser(Browsers.java:65)
+at com.opencart.base.BaseTest.setUP(BaseTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTitleTest -->
-        <test-method signature="homePageURLTest()[pri:0, instance:com.opencart.tests.HomePageTest@1bd4fdd]" started-at="2023-12-21T12:48:51 IST" name="homePageURLTest" finished-at="2023-12-21T12:48:51 IST" duration-ms="2" status="PASS">
+        <test-method signature="homePageURLTest()[pri:0, instance:com.opencart.tests.HomePageTest@42a48628]" started-at="2023-12-21T19:31:24 IST" name="homePageURLTest" finished-at="2023-12-21T19:31:24 IST" duration-ms="1" status="SKIP">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Cannot find command to respond: 3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Cannot find command to respond: 3
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:241)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:101)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPageImpl(BrowserContextImpl.java:419)
+at com.microsoft.playwright.impl.BrowserContextImpl.lambda$newPage$13(BrowserContextImpl.java:412)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:412)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:44)
+at com.opencart.factory.Browsers.startBrowser(Browsers.java:65)
+at com.opencart.base.BaseTest.setUP(BaseTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageURLTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.opencart.tests.HomePageTest@1bd4fdd]" started-at="2023-12-21T12:48:51 IST" name="searchTest" data-provider="getProductData" finished-at="2023-12-21T12:48:55 IST" duration-ms="3522" status="PASS">
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.opencart.tests.HomePageTest@42a48628]" started-at="2023-12-21T19:31:24 IST" name="searchTest" data-provider="getProductData" finished-at="2023-12-21T19:31:24 IST" duration-ms="1" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -27,10 +144,49 @@
               </value>
             </param>
           </params>
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Cannot find command to respond: 3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Cannot find command to respond: 3
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:241)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:101)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPageImpl(BrowserContextImpl.java:419)
+at com.microsoft.playwright.impl.BrowserContextImpl.lambda$newPage$13(BrowserContextImpl.java:412)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:412)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:44)
+at com.opencart.factory.Browsers.startBrowser(Browsers.java:65)
+at com.opencart.base.BaseTest.setUP(BaseTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.opencart.tests.HomePageTest@1bd4fdd]" started-at="2023-12-21T12:48:55 IST" name="searchTest" data-provider="getProductData" finished-at="2023-12-21T12:48:58 IST" duration-ms="3417" status="PASS">
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.opencart.tests.HomePageTest@42a48628]" started-at="2023-12-21T19:31:24 IST" name="searchTest" data-provider="getProductData" finished-at="2023-12-21T19:31:24 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -38,25 +194,279 @@
               </value>
             </param>
           </params>
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Cannot find command to respond: 3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Cannot find command to respond: 3
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:241)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:101)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPageImpl(BrowserContextImpl.java:419)
+at com.microsoft.playwright.impl.BrowserContextImpl.lambda$newPage$13(BrowserContextImpl.java:412)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:412)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:44)
+at com.opencart.factory.Browsers.startBrowser(Browsers.java:65)
+at com.opencart.base.BaseTest.setUP(BaseTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.opencart.tests.HomePageTest@1bd4fdd]" started-at="2023-12-21T12:48:58 IST" name="searchTest" data-provider="getProductData" finished-at="2023-12-21T12:49:02 IST" duration-ms="3410" status="PASS">
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.opencart.tests.HomePageTest@42a48628]" started-at="2023-12-21T19:31:24 IST" name="searchTest" data-provider="getProductData" finished-at="2023-12-21T19:31:24 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Samasung]]>
+                <![CDATA[Samsung]]>
               </value>
             </param>
           </params>
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Cannot find command to respond: 3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Cannot find command to respond: 3
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:241)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:101)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPageImpl(BrowserContextImpl.java:419)
+at com.microsoft.playwright.impl.BrowserContextImpl.lambda$newPage$13(BrowserContextImpl.java:412)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:412)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:44)
+at com.opencart.factory.Browsers.startBrowser(Browsers.java:65)
+at com.opencart.base.BaseTest.setUP(BaseTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.HomePageTest@1bd4fdd]" started-at="2023-12-21T12:49:02 IST" name="tearDown" finished-at="2023-12-21T12:49:02 IST" duration-ms="152" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.HomePageTest@42a48628]" started-at="2023-12-21T19:31:24 IST" name="tearDown" finished-at="2023-12-21T19:31:24 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.opencart.tests.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2023-12-21T19:31:19 IST" name="FirefoxTest" finished-at="2023-12-21T19:31:24 IST" duration-ms="4316">
+      <class name="com.opencart.tests.LoginPageTest">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:com.opencart.tests.LoginPageTest@36fc695d]" started-at="2023-12-21T19:31:19 IST" name="setUP" finished-at="2023-12-21T19:31:23 IST" duration-ms="4098" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Cannot find object to call __adopt__: request-context@568fe96153535b48b812153d9d9ed826]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Cannot find object to call __adopt__: request-context@568fe96153535b48b812153d9d9ed826
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:274)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.BrowserImpl.newContextImpl(BrowserImpl.java:215)
+at com.microsoft.playwright.impl.BrowserImpl.lambda$newContext$1(BrowserImpl.java:120)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.BrowserImpl.newContext(BrowserImpl.java:120)
+at com.microsoft.playwright.impl.BrowserImpl.newContext(BrowserImpl.java:37)
+at com.opencart.factory.Browsers.startBrowser(Browsers.java:63)
+at com.opencart.base.BaseTest.setUP(BaseTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.opencart.tests.LoginPageTest@36fc695d]" started-at="2023-12-21T19:31:23 IST" name="loginPageTitleTest" finished-at="2023-12-21T19:31:23 IST" duration-ms="0" status="SKIP">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Cannot find object to call __adopt__: request-context@568fe96153535b48b812153d9d9ed826]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Cannot find object to call __adopt__: request-context@568fe96153535b48b812153d9d9ed826
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:274)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.BrowserImpl.newContextImpl(BrowserImpl.java:215)
+at com.microsoft.playwright.impl.BrowserImpl.lambda$newContext$1(BrowserImpl.java:120)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.BrowserImpl.newContext(BrowserImpl.java:120)
+at com.microsoft.playwright.impl.BrowserImpl.newContext(BrowserImpl.java:37)
+at com.opencart.factory.Browsers.startBrowser(Browsers.java:63)
+at com.opencart.base.BaseTest.setUP(BaseTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method signature="loginPageURLTest()[pri:2, instance:com.opencart.tests.LoginPageTest@36fc695d]" started-at="2023-12-21T19:31:24 IST" name="loginPageURLTest" finished-at="2023-12-21T19:31:24 IST" duration-ms="0" status="SKIP">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Cannot find object to call __adopt__: request-context@568fe96153535b48b812153d9d9ed826]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Cannot find object to call __adopt__: request-context@568fe96153535b48b812153d9d9ed826
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:274)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.BrowserImpl.newContextImpl(BrowserImpl.java:215)
+at com.microsoft.playwright.impl.BrowserImpl.lambda$newContext$1(BrowserImpl.java:120)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.BrowserImpl.newContext(BrowserImpl.java:120)
+at com.microsoft.playwright.impl.BrowserImpl.newContext(BrowserImpl.java:37)
+at com.opencart.factory.Browsers.startBrowser(Browsers.java:63)
+at com.opencart.base.BaseTest.setUP(BaseTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageURLTest -->
+        <test-method signature="appLoginTest()[pri:3, instance:com.opencart.tests.LoginPageTest@36fc695d]" started-at="2023-12-21T19:31:24 IST" name="appLoginTest" finished-at="2023-12-21T19:31:24 IST" duration-ms="0" status="SKIP">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Cannot find object to call __adopt__: request-context@568fe96153535b48b812153d9d9ed826]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Cannot find object to call __adopt__: request-context@568fe96153535b48b812153d9d9ed826
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:274)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.BrowserImpl.newContextImpl(BrowserImpl.java:215)
+at com.microsoft.playwright.impl.BrowserImpl.lambda$newContext$1(BrowserImpl.java:120)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.BrowserImpl.newContext(BrowserImpl.java:120)
+at com.microsoft.playwright.impl.BrowserImpl.newContext(BrowserImpl.java:37)
+at com.opencart.factory.Browsers.startBrowser(Browsers.java:63)
+at com.opencart.base.BaseTest.setUP(BaseTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.LoginPageTest@36fc695d]" started-at="2023-12-21T19:31:24 IST" name="tearDown" finished-at="2023-12-21T19:31:24 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.tests.LoginPageTest -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Parallel Test Suite -->
 </testng-results>

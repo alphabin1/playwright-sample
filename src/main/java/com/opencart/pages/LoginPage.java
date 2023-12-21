@@ -1,42 +1,58 @@
 package com.opencart.pages;
 
-import com.opencart.factory.AllBrowsers;
+import com.opencart.factory.Browsers;
 
-public class LoginPage extends AllBrowsers {
+/**
+ * Page class for Login Page functionalities.
+ */
+public class LoginPage extends Browsers {
 
-	// String Locators - Object Repository
-	private String emailId = "#input-email";
-	private String password = "#input-password";
-	private String loginBtn = "[type='submit']";
-	private String accountHeader = "//h2[text()='My Account']";
+    // String Locators - Object Repository
+    private String emailId = "#input-email";
+    private String password = "#input-password";
+    private String loginBtn = "[type='submit']";
+    private String accountHeader = "//h2[text()='My Account']";
 
-	// Page Methods
-	public String getLoginPageTitle() {
-		String title = page.title();
-		System.out.println("Login page title is : " + title);
-		return title;
-	}
+    /**
+     * Retrieves the title of the Login page.
+     *
+     * @return String representing the title of the Login page.
+     */
+    public String getLoginPageTitle() {
+        String title = page.title();
+        System.out.println("Login page title is : " + title);
+        return title;
+    }
 
-	public String getLoginPageURL() {
-		String url = page.url();
-		System.out.println("Login page url is : " + url);
-		return url;
-	}
+    /**
+     * Retrieves the URL of the Login page.
+     *
+     * @return String representing the URL of the Login page.
+     */
+    public String getLoginPageURL() {
+        String url = page.url();
+        System.out.println("Login page url is : " + url);
+        return url;
+    }
 
-	public boolean doLogin(String emailID, String pwd) {
-		page.fill(emailId, emailID);
-		page.fill(password, pwd);
-		page.click(loginBtn);
+    /**
+     * Performs login action with provided credentials.
+     *
+     * @param emailID User's email ID for login.
+     * @param pwd User's password for login.
+     * @return Boolean representing the login success status.
+     */
+    public boolean doLogin(String emailID, String pwd) {
+        page.fill(emailId, emailID);
+        page.fill(password, pwd);
+        page.click(loginBtn);
 
-		if (page.isVisible(accountHeader)) {
-			System.out.println("User is logged in successfully..." + '\n');
-			return true;
-
-		} else {
-			System.out.println("User is not able to login" + '\n');
-			return false;
-		}
-
-	}
-
+        if (page.isVisible(accountHeader)) {
+            System.out.println("User is logged in successfully..." + '\n');
+            return true;
+        } else {
+            System.out.println("User is not able to login" + '\n');
+            return false;
+        }
+    }
 }

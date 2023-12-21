@@ -8,30 +8,39 @@ import org.testng.annotations.Test;
 import com.opencart.base.BaseTest;
 import com.opencart.constants.AppConstants;
 import com.opencart.pages.HomePage;
-import com.opencart.utils.PropertiesClass;
+import com.opencart.utils.PropertiesUtils;
 
+/**
+ * Contains test cases related to the Login page functionality.
+ */
 public class LoginPageTest extends BaseTest {
 
-	@Test(priority = 1)
-	public void loginPageTitleTest() {
-		loginPage = new HomePage().navigateToLoginPage();
-		Assert.assertEquals(loginPage.getLoginPageTitle().trim(), AppConstants.Login_PAGE_TITLE);
-	}
+    /**
+     * Verifies the Login page title.
+     */
+    @Test(priority = 1)
+    public void loginPageTitleTest() {
+        loginPage = new HomePage().navigateToLoginPage();
+        Assert.assertEquals(loginPage.getLoginPageTitle().trim(), AppConstants.LOGIN_PAGE_TITLE);
+    }
 
-	@Test(priority = 2)
-	public void loginPageURLTest() {
-		Assert.assertEquals(loginPage.getLoginPageURL().trim(), AppConstants.Login_PAGE_URL);
+    /**
+     * Verifies the Login page URL.
+     */
+    @Test(priority = 2)
+    public void loginPageURLTest() {
+        Assert.assertEquals(loginPage.getLoginPageURL().trim(), AppConstants.LOGIN_PAGE_URL);
+    }
 
-	}
-
-	@Test(priority = 3)
-	public void appLoginTest() {
-		try {
-			loginPage.doLogin(PropertiesClass.setUserName().trim(), PropertiesClass.setPassword().trim());
-
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
+    /**
+     * Tests the login functionality with valid credentials.
+     */
+    @Test(priority = 3)
+    public void appLoginTest() {
+        try {
+            loginPage.doLogin(PropertiesUtils.setUserName().trim(), PropertiesUtils.setPassword().trim());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
