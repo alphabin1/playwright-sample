@@ -11,7 +11,7 @@ public class LoginPage extends Browsers {
     private String emailId = "#input-email";
     private String password = "#input-password";
     private String loginBtn = "[type='submit']";
-    private String accountHeader = "//h2[text()='My Account']";
+    private String accountHeader = "#content > h2:first-of-type";
 
     /**
      * Retrieves the title of the Login page.

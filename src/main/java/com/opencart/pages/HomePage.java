@@ -8,7 +8,7 @@ import com.opencart.factory.Browsers;
 public class HomePage extends Browsers {
 
     // String Locators - Object Repository
-    private String search = "//input[@name='search']";
+    private String search = "#search input";
     private String searchIcon = "#search button";
     private String searchPageHeader = "#content h1";
     private String myAccountBtn = "a[title='My Account']";
