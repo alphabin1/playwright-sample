@@ -15,10 +15,21 @@ import com.opencart.utils.PropertiesUtils;
  */
 public class Browsers extends PropertiesUtils {
 
-	static Playwright playwright;
-	static Browser browser;
-	static BrowserContext browserContext;
-	public static Page page;
+	Playwright playwright;
+	Browser browser;
+	BrowserContext browserContext;
+	Page page;
+
+	private static ThreadLocal<Page> tlPage = new ThreadLocal<>();
+
+	/**
+	 * Gets the current Page object.
+	 *
+	 * @return The current Page object associated with the thread.
+	 */
+	public static Page getPage() {
+		return tlPage.get();
+	}
 
 	/**
 	 * Initializes a browser and navigates to the specified URL.
@@ -28,7 +39,7 @@ public class Browsers extends PropertiesUtils {
 	 * @param mode        The mode for browser initialization (headless or not).
 	 * @return The created Page object for the browser.
 	 */
-	public static Page startBrowser(String browserName, String webUrl, boolean mode) {
+	public Page startBrowser(String browserName, String webUrl, boolean mode) {
 
 		playwright = Playwright.create();
 
@@ -64,6 +75,7 @@ public class Browsers extends PropertiesUtils {
 
 		page = browserContext.newPage();
 		page.navigate(webUrl);
+		tlPage.set(page);
 
 		return page;
 	}

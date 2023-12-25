@@ -49,13 +49,7 @@ public class HomePageTest extends BaseTest{
 	 */
 	@Test(dataProvider = "getProductData")
 	public void searchTest(String productName) {
-		try {
-			Thread.sleep(3000);
-			String actualSearchHeader = homePage.doSearch(productName);
-			Assert.assertEquals(actualSearchHeader, "Search - " + productName);
-
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		String actualSearchHeader = homePage.doSearch(productName);
+		Assert.assertEquals(actualSearchHeader, "Search - " + productName);
 	}
 }

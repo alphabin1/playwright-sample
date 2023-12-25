@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 
 import com.opencart.base.BaseTest;
 import com.opencart.constants.AppConstants;
-import com.opencart.pages.HomePage;
 import com.opencart.utils.PropertiesUtils;
 
 /**
@@ -20,7 +19,7 @@ public class LoginPageTest extends BaseTest {
      */
     @Test(priority = 1)
     public void loginPageTitleTest() {
-        loginPage = new HomePage().navigateToLoginPage();
+        loginPage = homePage.navigateToLoginPage();
         Assert.assertEquals(loginPage.getLoginPageTitle().trim(), AppConstants.LOGIN_PAGE_TITLE);
     }
 
